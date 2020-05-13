@@ -26,6 +26,9 @@
 - **LaProp** ([Code](https://github.com/Z-T-WANG/LaProp-Optimizer))
   - [LaProp: a Better Way to Combine Momentum with Adaptive Gradient](https://arxiv.org/pdf/2002.04839.pdf) (2020) *Liu Ziyin, Zhikang T.Wang, Masahito Ueda*
 ### Bayesian optimization
+  - [A Tutorial on Bayesian Optimization of Expensive Cost Functions, with Application to Active User Modeling and Hierarchical Reinforcement Learning](https://arxiv.org/pdf/1012.2599.pdf) (2010) *Eric Brochu, Vlad M. Cora, Nando de Freitas*
+  - [Practical Bayesian Optimization of Machine Learning Algorithms](https://arxiv.org/pdf/1206.2944.pdf) (2012) *Jasper Snoek, Hugo Larochelle, Ryan P. Adams*
+  - [Taking the Human Out of the Loop: A Review of Bayesian Optimization](https://www.cs.ox.ac.uk/people/nando.defreitas/publications/BayesOptLoop.pdf) (2016) *Bobak Shahriari, Kevin Swersky, Ziyu Wang, Ryan P. Adams, Nando de Freitas*
 ### Evolutionary algorithms
 - **PBT** Population-based Training
   - [Population Based Training of Neural Networks](https://arxiv.org/pdf/1711.09846.pdf) (2017) *Max Jaderberg, Valentin Dalibard, Simon Osindero, Wojciech M. Czarnecki, Jeff Donahue, Ali Razavi, Oriol Vinyals, Tim Green, Iain Dunning, Karen Simonyan, Chrisantha Fernando, Koray Kavukcuoglu*
