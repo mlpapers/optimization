@@ -17,11 +17,10 @@
 - **Adagrad**
 - **Adadelta**
 - **RMSprop**
-- **Adam**
+- **Adam, AdaMax**
   - [Adam: A Method for Stochastic Optimization](https://arxiv.org/pdf/1412.6980.pdf) (2017) *Diederik P. Kingma, Jimmy Ba*
 - **TAdam**
   - [TAdam: A Robust Stochastic Gradient Optimizer](https://arxiv.org/pdf/2003.00179.pdf) (2020) *Wendyam Eric Lionel Ilboudo, Taisuke Kobayashi, Kenji Sugimoto*
-- **AdaMax**
 - **Nadam**
 - **AMSGrad**
 - **LaProp** ([Code](https://github.com/Z-T-WANG/LaProp-Optimizer))
@@ -60,7 +59,10 @@
 - **Particle swarm** ([Wiki](https://en.wikipedia.org/wiki/Particle_swarm_optimization))
   - [Particle Swarm Optimization](https://www.cs.tufts.edu/comp/150GA/homeworks/hw3/_reading6%201995%20particle%20swarming.pdf) (1995) *James Kennedy, Russell Eberhart*
 
-### Multi-armed bandits
+### Multi-armed bandits ([Wiki](https://en.wikipedia.org/wiki/Multi-armed_bandit))
+- [Some Aspects of the Sequential Design of Experiments](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.335.3232&rep=rep1&type=pdf) (1952) *Herbert Robbins*
+- [Multi-armed Bandit Algorithmsand Empirical Evaluation](http://bandit.sourceforge.net/Vermorel2005poker.pdf) (2005) *Joannes Vermorel, Mehryar Mohri*
+- [A modern Bayesian look at the multi-armed bandit](http://www.economics.uci.edu/~ivan/asmb.874.pdf) (2010) *Steven L. Scott*
 
 ### Heuristic algorithms
 
