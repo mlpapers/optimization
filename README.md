@@ -30,6 +30,16 @@
   - [A Tutorial on Bayesian Optimization of Expensive Cost Functions, with Application to Active User Modeling and Hierarchical Reinforcement Learning](https://arxiv.org/pdf/1012.2599.pdf) (2010) *Eric Brochu, Vlad M. Cora, Nando de Freitas*
   - [Practical Bayesian Optimization of Machine Learning Algorithms](https://arxiv.org/pdf/1206.2944.pdf) (2012) *Jasper Snoek, Hugo Larochelle, Ryan P. Adams*
   - [Taking the Human Out of the Loop: A Review of Bayesian Optimization](https://www.cs.ox.ac.uk/people/nando.defreitas/publications/BayesOptLoop.pdf) (2016) *Bobak Shahriari, Kevin Swersky, Ziyu Wang, Ryan P. Adams, Nando de Freitas*
+- **REMBO** 
+  - [Bayesian Optimization in High Dimensions via Random Embeddings](https://www.cs.ubc.ca/~hutter/papers/13-IJCAI-BO-highdim.pdf) (2013) *Ziyu Wang, Masrour Zoghi, Frank Hutter, David Matheson, Nando De Freitas*
+  - [On the choice of the low-dimensional domain for globaloptimization via random embedding](https://arxiv.org/pdf/1704.05318.pdf) (2018) *Mickael Binois, David Ginsbourger, Olivier Roustant*
+- **HeSBO**
+  - [A Framework for Bayesian Optimization in Embedded Subspaces](http://proceedings.mlr.press/v97/nayebi19a/nayebi19a.pdf) (2019) *Alexander Munteanu, Amin Nayebi, Matthias Poloczek*
+- **SIRBO**
+  - [High Dimensional Bayesian Optimization via Supervised Dimension Reduction](https://arxiv.org/pdf/1907.08953.pdf) (2019) *Miao Zhang, Huiqi Li, Steven Su*
+- **SI-BO**
+- **SILBO**
+  - [Semi-supervised Embedding Learning for High-dimensionalBayesian Optimization](https://arxiv.org/pdf/2005.14601.pdf) (2020) *Jingfan Chen, Guanghui Zhu, Rong Gu, Chunfeng Yuan, Yihua Huang*
 
 ### Evolutionary algorithms ([Wiki](https://en.wikipedia.org/wiki/Evolutionary_algorithm))
 - Imitate some aspects of natural evolution
