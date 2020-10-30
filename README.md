@@ -40,6 +40,8 @@
 - **SI-BO**
 - **SILBO**
   - [Semi-supervised Embedding Learning for High-dimensionalBayesian Optimization](https://arxiv.org/pdf/2005.14601.pdf) (2020) *Jingfan Chen, Guanghui Zhu, Rong Gu, Chunfeng Yuan, Yihua Huang*
+- **BOHB** - Bayesian Optimization with Hyperband
+  - [BOHB: Robust and Efficient Hyperparameter Optimization at Scale](http://proceedings.mlr.press/v80/falkner18a/falkner18a.pdf) (2018) *Stefan Falkner, Aaron Klein, Frank Hutter*
 
 ### Evolutionary algorithms ([Wiki](https://en.wikipedia.org/wiki/Evolutionary_algorithm))
 - Imitate some aspects of natural evolution
