@@ -1,3 +1,10 @@
+---
+title: "Optimization"
+aliases: ["Mathematical optimization", "Numerical optimization"]
+tags:
+  - optimization
+  - gradient-descent
+---
 # Optimization ([Wiki](https://en.wikipedia.org/wiki/Mathematical_optimization))
 
 - **Overview**
@@ -83,10 +90,16 @@
 ### Multiobjective optimization
   - [Pareto set](https://en.wikipedia.org/wiki/Pareto_efficiency#Use_in_engineering)
 
-### Software
+## Software
 - **Python**
   - Sherpa ([Docs](https://parameter-sherpa.readthedocs.io/en/latest/), [Code](https://github.com/sherpa-ai/sherpa), [Paper](https://arxiv.org/pdf/2005.04048.pdf))
   - PyMOO ([Homepage](https://pymoo.org/), [Paper](https://arxiv.org/pdf/2002.04504.pdf))
 
 - **C++**
   - Emsmallen ([Homepage](https://ensmallen.org/))
+
+## Related Topics
+- [Neural Networks](https://mlpapers.org/neural-nets/)
+- [AutoML](https://mlpapers.org/automl/)
+- [Bayesian Inference](https://mlpapers.org/bayesian-inference/)
+- [Reinforcement Learning](https://mlpapers.org/reinforcement-learning/)
