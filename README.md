@@ -1,10 +1,3 @@
----
-title: "Optimization"
-aliases: ["Mathematical optimization", "Numerical optimization"]
-tags:
-  - optimization
-  - gradient-descent
----
 # Optimization ([Wiki](https://en.wikipedia.org/wiki/Mathematical_optimization))
 
 - **Overview**
