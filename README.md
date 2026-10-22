@@ -38,6 +38,15 @@
 - **SAGA** - Caches component gradients and uses their average to correct stochastic updates, reducing gradient variance for finite-sum objectives; supports proximal updates for nonsmooth regularization. [Defazio et al. 2014](<https://arxiv.org/abs/1407.0202> "SAGA: A Fast Incremental Gradient Method With Support for Non-Strongly Convex Composite Objectives; NeurIPS").
 - **D-Adaptation** - Adapts step sizes without specifying an initial learning rate; distinguishes convex Lipschitz convergence guarantees from empirical SGD and Adam variants for deep learning. [Defazio and Mishchenko 2023](<https://arxiv.org/abs/2301.07733> "Learning-Rate-Free Learning by D-Adaptation; arXiv").
 
+## Training schedules and online control
+
+- **SGDR** - Cosine learning-rate decay with periodic warm restarts. Restarts raise the rate while retaining weights; cycle lengths and rate bounds are chosen in advance. [Loshchilov and Hutter 2017](<https://arxiv.org/abs/1608.03983v5> "SGDR: Stochastic Gradient Descent with Warm Restarts; ICLR").
+- **Stochastic Weight Averaging** - Averages weights along constant- or cyclic-rate SGD trajectories to produce one model. The paper connects this to geometric ensembling; averaging weights differs from averaging predictions. [Izmailov et al. 2018](<https://arxiv.org/abs/1803.05407v3> "Averaging Weights Leads to Wider Optima and Better Generalization; UAI").
+- **Constant rate with cooldown** - Shares a constant-rate training trajectory across stopping budgets through separate cooldown branches. Tuned schedules closely match cosine in the paper's language-model experiments. [Hägele et al. 2024](<https://arxiv.org/abs/2405.18392> "Scaling Laws and Compute-Optimal Training Beyond Fixed Training Durations; NeurIPS").
+- **Schedule-Free optimization** - Interpolates base and averaged iterates for gradient evaluation, replacing horizon-dependent decay. Learning rate and momentum still matter. Its AdamW variant won AlgoPerf's 2024 self-tuning track. [Defazio et al. 2024](<https://arxiv.org/abs/2405.15682v4> "The Road Less Scheduled; NeurIPS"); [code](<https://github.com/facebookresearch/schedule_free>).
+- **Warmup and batch scaling** - See [Distributed Learning](https://mlpapers.org/distributed-learning/#scaling-evidence-and-measurement) for the ResNet-50 recipe combining warmup and learning-rate scaling at batch size 8,192; that result does not establish a universal scaling rule.
+- **Learned learning-rate controllers** - Learns a policy from training statistics to adjust SGD or RMSprop rates. Transfers from small MNIST networks to tested larger networks and CIFAR-10, but the tested controller did not transfer between base optimizers. [Daniel et al. 2016](<https://doi.org/10.1609/aaai.v30i1.10187> "Learning Step Size Controllers for Robust Neural Network Training; AAAI").
+
 ## Bayesian optimization
 
 - **Bayesian optimization foundations** - Uses a probabilistic surrogate and an acquisition function to choose expensive evaluations. Balances learning about uncertain regions against exploiting promising ones. [Brochu et al. 2010](<https://arxiv.org/abs/1012.2599> "A Tutorial on Bayesian Optimization of Expensive Cost Functions, with Application to Active User Modeling and Hierarchical Reinforcement Learning; arXiv").
@@ -90,6 +99,7 @@
 
 - **NSGA-II** - Combines nondominated sorting with elitist selection from parents and offspring, balancing fitness and spread. Approximates a set of trade-offs instead of choosing a single objective weighting. [Deb et al. 2002](<https://doi.org/10.1109/4235.996017> "A fast and elitist multiobjective genetic algorithm: NSGA-II; IEEE Trans. Evol. Computat.").
 - **AlgoPerf** - Benchmarks time to a target result across neural-network workloads on fixed hardware. Controls tuning protocols and workload variants to distinguish optimizer gains from evaluation artifacts. [Dahl et al. 2023](<https://arxiv.org/abs/2306.07179> "Benchmarking Neural Network Training Algorithms; arXiv").
+- **Diffusion optimizer evaluation** - Across seven optimizers on CelebA-64, denoising losses span 1.8% while FID spans 6.3-15.3. Three seeds per selected configuration; tuning uses shorter runs and some grid boundaries remain unexplored. Loss rankings do not track sample quality. [Bolatov et al. 2026](<https://arxiv.org/abs/2609.23055v1> "Optimizers for Diffusion Models: A Controlled Benchmark; arXiv").
 
 ## Software
 
@@ -105,5 +115,6 @@
 
 - [Neural Networks](https://mlpapers.org/neural-nets/)
 - [AutoML](https://mlpapers.org/automl/)
+- [Meta-Learning](https://mlpapers.org/meta-learning/)
 - [Bayesian Inference](https://mlpapers.org/bayesian-inference/)
 - [Reinforcement Learning](https://mlpapers.org/reinforcement-learning/)
